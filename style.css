@@ -29,7 +29,7 @@ header h1 {
 header h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 24px;
     font-style: italic;
     letter-spacing: 5px;
     color: #581845;
@@ -78,7 +78,6 @@ header .banner {
     
     header h2 {
         font-size: 24px;
-        margin-top: 20px;
     }
     
     header nav ul li {
