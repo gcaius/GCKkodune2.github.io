@@ -11,7 +11,8 @@ header div img{
 header .logo{
     text-align: center;
     width: 100%;
-    height: 250px;
+    height: calc(100vh - 700px);
+    
 }
 
 
@@ -62,39 +63,69 @@ header nav ul li a {
 header .banner {
         background-image: url("img/banner2.jpg");
         width: 100%;
-        height: 600px;
+        height: calc(100vh - 300px);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
 
-@media only screen and (min-width: 950px) {
+@media only screen and (max-width: 950px) {
     
 
-    header h1 a {
-        font-size: 80px;
+    header h1 {
+        font-size: 60px;
     }
     
     header h2 {
+        font-size: 18px;
+    }
+    
+    header nav ul li a{
         font-size: 24px;
     }
     
-    header nav ul li {
-        padding: 16px 42px;
+    header .banner {
+        height: calc(100vh - 500px);
     }
+    
+    header .logo{
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 700px);
+    
+}
     
 }
 
 
 /*MAIN - GALLERY*/
 
+
+    .meist-tekst, .meist-pilt {
+        height: calc(100vh - 400px);
+        width:50%;
+        margin-bottom: 50px;
+        
+    }
+
+    .meist-tekst {
+        float: left;
+    }
+
+    .meist-pilt {
+        float: right;
+
+    }
+
+
 .index-header{
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
     
 }
-.pealkirjad {
+.pealkiri1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -103,36 +134,45 @@ header .banner {
     color: #581845;
     text-transform: uppercase;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    margin-left:10%;
 }
 
-.meist  p{
+.pealkiri2 {
+
+    }
+
+.pealkiri2 h2{
+    display:none;
+}
+
+
+
+.meist-tekst  p{
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 5px;
     color: #581845;
     text-transform: uppercase;
-    width: 50%;
-    float: left;
-    margin: 30px 50px;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 15%;
 
          
 }
 
 
-.meist {
-    padding: 50px;
+
+.meist-pilt img {
     width: 100%;
-    float:left; 
-    overflow: hidden; 
-
+    max-width: 500px;
+    border-radius: 150px;
+    margin-top: 10%;
+     
 }
 
-.meist img {
-    border-radius: 100px;
-    margin: 50px 100px 50px 50px;
-}
 hr {
     color: #581845;
     border-width: 5px;
@@ -141,18 +181,6 @@ hr {
     margin-bottom: 10px;
 } 
 
-.pealkirjad {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    font-style: italic;
-    letter-spacing: 3px;
-    color: #581845;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    
-}
 
 .gallery-links {
     display: flex;
@@ -198,6 +226,61 @@ hr {
     border-radius: 150px;
 }
 
+@media screen and (max-width:950px)
+{
+    .meist-tekst, .meist-pilt {
+        height: calc(100vh - 400px);
+        width:100%;
+    }
+
+    .meist-tekst p{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 5px;
+        color: #581845;
+        text-transform: uppercase;
+        width: 70%;
+        text-align: center;
+        margin-left: 15%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .meist-pilt {
+        display: none;
+
+    }
+    .meist-pilt img{
+        display: none;
+    }
+    
+    .pealkiri2 {
+        margin-left: 10%;
+    }
+    
+    .pealkiri2 h2{
+        display:contents;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        font-style: italic;
+        letter-spacing: 3px;
+        color: #581845;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: left;
+        margin-top: 50px;
+
+    }
+    
+    .index-header {
+        margin-top: 120px;
+        margin-bottom: 70px;
+    }
+}
+
+
 /*FOOTER*/
 
 footer {
@@ -240,6 +323,21 @@ footer ul li a {
 .footer-sm img {
     width: 100%;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:950px)
+{
+    
+    footer ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+    
 }
    
 
