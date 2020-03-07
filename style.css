@@ -12,6 +12,7 @@ header .logo{
     text-align: center;
     width: 100%;
     height: calc(100vh - 700px);
+    padding-top: 50px;
     
 }
 
