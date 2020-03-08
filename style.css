@@ -4,14 +4,14 @@
 
 header div img{
     width: 100%;
-    height: 450px;
+    height: calc(100vh - 100px);
 }
     
    
 header .logo{
     text-align: center;
     width: 100%;
-    height: calc(100vh - 700px);
+    height: calc(100vh - 350px);
     padding-top: 50px;
     
 }
@@ -38,7 +38,6 @@ header h2 {
     text-transform: uppercase;
     margin-top:25px;
 }
-
 
 header nav ul {
     display: block;
@@ -84,18 +83,27 @@ header .banner {
         font-size: 18px;
     }
     
+header nav ul li {
+    display: inline-block;
+    padding: 2% 2%;
+}
+    
+    
     header nav ul li a{
-        font-size: 24px;
+    font-size: 15px;
+    letter-spacing: 3px;
     }
     
     header .banner {
-        height: calc(100vh - 500px);
+        width: 100%;
+        height: calc(100vh - 300px);
     }
     
     header .logo{
     text-align: center;
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 350px);
+    padding-top: 30px;
     
 }
     
@@ -106,7 +114,7 @@ header .banner {
 
 
     .meist-tekst, .meist-pilt {
-        height: calc(100vh - 400px);
+        height: calc(100vh - 100px);
         width:50%;
         margin-bottom: 50px;
         
@@ -155,7 +163,7 @@ header .banner {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     color: #581845;
     text-transform: uppercase;
     width: 70%;
@@ -197,9 +205,9 @@ hr {
 }
 
 .gallery-image {
-    -webkit-flex-basis: 500px; /*kuigi uuematel brauseri versioonidel peaks ka prefiksiteta töötama*/
-    -moz-flex-basis: 500px;
-    flex-basis: 500px;
+    -webkit-flex-basis: 300px; /*kuigi uuematel brauseri versioonidel peaks ka prefiksiteta töötama*/
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
     margin: 10px;
     
     
@@ -232,15 +240,15 @@ hr {
 @media screen and (max-width:950px)
 {
     .meist-tekst, .meist-pilt {
-        height: calc(100vh - 400px);
+        height: calc(100vh - 170px);
         width:100%;
     }
 
     .meist-tekst p{
         font-family: "Open Sans", sans-serif;
         font-weight: 500;
-        font-size: 22px;
-        letter-spacing: 5px;
+        font-size: 18px;
+        letter-spacing: 3px;
         color: #581845;
         text-transform: uppercase;
         width: 70%;
@@ -278,8 +286,8 @@ hr {
     }
     
     .index-header {
-        margin-top: 120px;
-        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
 }
 
@@ -288,8 +296,8 @@ hr {
 
 footer {
     width: 100%;
-    height: 200px;  
-    margin-top: 50px;
+    height: calc(100vh - 300px);   
+    margin-top: 8%;
     background-color: #581845;
     overflow: hidden; 
 }
@@ -297,8 +305,8 @@ footer {
 footer ul {
     width: fit-content;
     float: left;
-    padding-left: 50px;
-    margin-top: 50px;
+    padding-left: 5%;
+    margin-top: 5%;
 }
 
 footer ul li {
@@ -316,16 +324,16 @@ footer ul li a {
     text-decoration: none;
 }
 
-.footer-sm {
-    width: 60px;
-    padding-right: 60px;
+    .footer-sm {
+    width: 10%;
+    padding-right: 5%;
     float: right;
-    margin-top: 40px;
+    margin-top: 5%;
 }
 
 .footer-sm img {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 80%;
+    margin-bottom: 10%;
 }
 
 @media screen and (max-width:950px)
@@ -334,11 +342,38 @@ footer ul li a {
     footer ul li a {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 8px;
     letter-spacing: 3px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+        
+}
+    footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+    
+    footer {
+    width: 100%;
+    height: calc(100vh - 350px); 
+    margin-top: 50px;
+    background-color: #581845;
+    overflow: hidden; 
+}
+    
+    .footer-sm {
+    width: 10%;
+    padding-right: 10%;
+    float: right;
+    margin-top: 10%;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10%;
 }
     
 }
