@@ -1,0 +1,304 @@
+/*NAVBAR*/
+.navbar {
+  background: rgb(42,120,181);
+background: linear-gradient(90deg, rgba(42,120,181,1) 0%, rgba(9,9,121,1) 67%, rgba(2,0,36,1) 98%);
+    padding-right: 5%;
+}
+.navbar a{
+    align-items: right;
+    font-size: 25px;  
+}
+.navbar li{
+    padding-right: 50px;
+    
+}
+.ylemine a:hover {
+  text-decoration: underline;
+}
+/*NAVBAR*/
+
+/*FOOTER*/
+footer {
+  background: rgb(42,120,181);
+background: linear-gradient(90deg, rgba(42,120,181,1) 0%, rgba(9,9,121,1) 67%, rgba(2,0,36,1) 98%);
+}
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+footer a:hover {
+  color: #FA944B;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+    border-radius: 100%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-facebook {
+  background: #3B5998; 
+}
+.fa-instagram {
+  background: #125688;
+}
+.fa-whatsapp {
+  background: #4FCE5D;
+}
+.container{
+    align-content: center;
+}
+
+.kontakt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+   .row {
+    flex-direction: column-reverse;      
+  }
+}
+/*FOOTER*/
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+/*ESILEHE TAUST*/
+.taustaga{
+    background-image: url(img/adventure-1807524.jpg);
+    background-size: cover; 
+}
+.taustaga h2 {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20%;
+    margin-left: 15%;
+}
+.taustaga button {
+    color: #fff;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+.button{
+    background-color: #3c9ae3;
+    border: none;
+    color: white;
+    -webkit-box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 4px 1pxrgba(0,0,0,0.75);
+    box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.75);
+    height: 50px;
+    width: 250px;
+    font-size: 23px;
+} 
+.button:hover{
+    background-color: #55ACEE;
+} 
+/*ESILEHE TAUST*/
+
+
+/*INFO*/
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width:300px;
+    
+}
+
+rect {
+   fill:#c9bfc6;
+
+}
+
+@media (max-width: 800px) {
+   .row2 {
+    flex-direction: column;      
+  }
+
+}
+
+span {
+
+  display: inline-block;
+  height: 25px;
+}
+
+.kast{
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+/*TELLI*/
+
+
+.col-40 {
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+}
+
+.col-90 {
+  -ms-flex: 90%; /* IE10 */
+  flex: 90%;
+}
+
+.col-20 {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+}
+
+.col-30 {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+}
+.col-100 {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+}
+
+.col-30,
+.col-20,
+.col-40,
+.col-90 {
+  padding: 0 16px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    text-align: center;
+}
+
+
+textarea {
+  border: 1px solid #ccc;
+    resize: none;
+    height: 150px;
+    width: 400px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: start;
+
+}
+
+select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: start;
+
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+/* Hide the browser's default radio button */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.btn{
+    background-color: #3c9ae3;
+    border: none;
+    color: white;
+    -webkit-box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 4px 1pxrgba(0,0,0,0.75);
+    box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.75);
+    height: 50px;
+    width: 250px;
+    font-size: 23px;
+} 
+.btn:hover{
+    background-color: #55ACEE;
+} 
+
+.btn a{
+    color: white;
+
+}
+
+@media (max-width: 800px) {
+   .btn {
+   margin-bottom: 50px;     
+  }
+}
+
+
+
+
+
+
